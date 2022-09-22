@@ -1,0 +1,21 @@
+"""
+Codingbat List-2 big_diff
+"""
+def big_diff(nums):
+    """
+    Given an array length 1 or more of ints, return the difference between the
+    largest and smallest values in the array. Note: the built-in min(v1, v2)
+    and max(v1, v2) functions return the smaller or larger of two values.
+    """
+    return max(nums) - min(nums)
+
+def main():
+    """
+    Run some tests
+    """
+    print(big_diff([10, 3, 5, 6]))
+    print(big_diff([7, 2, 10, 9]))
+    print(big_diff([2, 10, 7, 2]))
+
+if __name__ == "__main__":
+    main()
