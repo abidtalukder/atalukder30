@@ -20,6 +20,9 @@ ___________
 - Write function to choose random devos
 - main() function and __name__ == "__main__" stuff
 - Get actual devos from the care package
+- To choose a random person from a random period. To get a random period, we choose a random number from 0 to 2, which we apply to a list 
+  keys. After that, we choose a random number for the team member. This random number is chosen by getting from 0 to the length of the list assigned to the period key chosen.
+  After that, we just select the random key to get a list, and we select the person from the list index.
 """
 
 import random
