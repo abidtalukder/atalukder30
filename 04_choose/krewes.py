@@ -33,12 +33,64 @@ krewes = {
         8: ["ALEKSANDRA",  "NAKIB",  "AMEER",  "HENRY",  "DONALD",  "YAT LONG",  "SEBASTIAN",  "DAVID",  "YUKI",  "SHAFIUL",  "DANIEL",  "SELENA",  "JOSEPH",  "SHINJI",  "RYAN",  "APRIL",  "ERICA",  "JIAN HONG",  "VERIT",  "JOSHUA",  "WILSON",  "AAHAN",  "GORDON",  "JUSTIN",  "MAYA",  "FAIYAZ",  "SHREYA",  "ERIC",  "JEFFERY",  "BRIAN",  "KEVIN",  "SAMSON",  "BRIAN",  "HARRY",  "wanying"]
 }
 
+
+
+
 def chooseRandomDevo():
     teamKeyIndex = random.randint(0, len(krewes) - 1)
     teamKey = list(krewes.keys())[teamKeyIndex]
     teamMemberIndex = random.randint(0, len(krewes[teamKey]) - 1)
     teamMember = krewes[teamKey][teamMemberIndex]
     print("Team " + str(teamKey) + ": " + teamMember)
+
+def writeToFile():
+    with open("krewes.txt", "w") as f:
+        for i in range(3):
+            period = list(krewes.keys())[i]
+
+            for j in range(len(krewes[period])):
+                f.write(f"{period}$$${krewes[period[j]]}$$$ben")
+
+                if j != len(krewes[period]) -1:
+                    f.write("@@@")
+
+    f.close()
+
+
+
+def chooseNewDevo():
+    with open("krewes.txt") as f:
+        txt = f.read()
+        txt = str(txt)
+        txt = txt.split("@@@")
+
+        krewes  = {
+            2:[],
+            7:[],
+            8:[],
+        }
+
+        for i in range(len(txt)):
+            person = txt[i]
+            person = person.split("$$$")
+
+
+            krewes[int(person[0])].append([person[1],[person[2]]])
+
+        period = random.choice(list(krewes.keys()))
+
+        person = random.choice(krewes[period])
+
+        print(f"{period} : {person[0]} : {person[1]}")
+
+    f.close()
+
+
+`       
+
+
+
+
 
 def main():
     chooseRandomDevo()
