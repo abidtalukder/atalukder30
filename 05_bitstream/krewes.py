@@ -1,9 +1,9 @@
 """
-TEAM JAW: William Vongphanith, Abid Talukder, Jonathan Song
+TEAM AE: Elizabeth Paperno, Abid Talukder
 SoftDev
-K01 -- Choose
-2022-09-22
-
+K05 -- Bitstrem
+2022-09-28
+Time Spent: 0.5 hours
 DISCO
 ___________
 - You can use the random module to generate random numbers (generate a number between 0 and 1 and multiply / add as needed)
@@ -13,20 +13,21 @@ ___________
 - var.write() writes to file with a string as input
 - var.read() reads in the entire file and returns a String
 - with open, you can in the string "r" for read or "w" for write. However, if you are reading
-
 QCC
 ___________
 - ...
-
 OPS SUMMARY
 ___________
-- Write demo code
-- Write function to choose random devos
+- Write to a file to create testing cases by indexing into each period of the dictionary,
+  and for each devo in the period using an fstring to format the text properly writing the
+  period, devo name, and ducky name ("BEN" for all the devos)
+- We then read this file and split it at "@@@," as this divides each devos information.
+  We then index through each item in this list, and split the string at "$$$", as this divides each element.
+  We then assign these values to the krewes dictionary.
+ - Then we used random.choice() to pick a period after converting the keys to list (proper input format)
+   Then we chose a random devo from that period also using random.choice() passing in the values of the dictionary at
+   the chosen period. We then used an fstring to print out the period, devo, and devo's ducky.
 - main() function and __name__ == "__main__" stuff
-- Get actual devos from the care package
-- To choose a random person from a random period. To get a random period, we choose a random number from 0 to 2, which we apply to a list 
-  keys. After that, we choose a random number for the team member. This random number is chosen by getting from 0 to the length of the list assigned to the period key chosen.
-  After that, we just select the random key to get a list, and we select the person from the list index.
 """
 
 import random
