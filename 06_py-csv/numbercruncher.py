@@ -35,9 +35,8 @@ jobs = {}
 def createDict():
     with open('occupations.csv') as f:
         r = csv.reader(f)
+        next(r)
         for line in r:
-            if line[1] == "Percentage":
-                continue
             jobs[line[0]] = float(line[1])
 
 def chooseJob():
