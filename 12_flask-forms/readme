@@ -18,4 +18,6 @@ DISCOS:
                   The POST request had the message Content-Type: application/x-www-form-urlencoded in the request headers and the request args were not shown. I believe that the Content-Type message is to show that the data is secured in the request message body instead of the request headers or args. </li>
                   
                   When actually handling GET and POST data, we saw that we had to use request.args() for GET and request.form() for POST. To handle which one to use, it was crucial that used if statements to difference what type of request method was actually being used. Otherwise, we would run into errors if we used something like request.form() for the GET method.                  
-                  
+
+QCC:
+ - Everything seems to work as intended
