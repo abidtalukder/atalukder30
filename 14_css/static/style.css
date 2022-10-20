@@ -1,0 +1,38 @@
+body {
+    background-color: #666666
+    height: 100%
+}
+
+.title-div {
+    background-color: #bebebe;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.content {
+    display: grid;
+}
+
+.nav {
+    float: left;
+    width: 250px;
+}
+
+.nav-bar {
+    font-size:24px;
+}
+
+.nav-content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    color: #dcdcdc
+    font-weight: bold;
+    font-size: 20px;
+}
