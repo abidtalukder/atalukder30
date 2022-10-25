@@ -17,7 +17,8 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 
 # < < < INSERT YOUR TEAM'S POPULATE-THE-DB CODE HERE > > >
 
-
+delete_table ="DROP TABLE IF EXISTS students"
+c.execute(delete_table)
 create_table = "create table students(name text, age int, id int);"          # test SQL stmt in sqlite3 shell, save as string
 c.execute(create_table)    # run SQL statement
 
