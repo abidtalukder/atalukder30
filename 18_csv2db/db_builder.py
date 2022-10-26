@@ -1,7 +1,8 @@
-#Clyde "Thluffy" Sinclair
-#SoftDev  
-#skeleton/stub :: SQLITE3 BASICS
-#Oct 2022
+# Abid Talukder, Raven Tang, Craig Chen
+# SoftDev
+# K18: (Python+SQLite)3: A Mare Widge Made in Hebben
+# 2022-10-26
+# time spent: 0.8 Hours
 
 import sqlite3   #enable control of an sqlite database
 import csv       #facilitate CSV I/O
@@ -26,12 +27,20 @@ c.execute(create_table)    # run SQL statement
 with open('students.csv') as csv_file:
     csv_reader = csv.DictReader(csv_file, delimiter=',')
     line_count = 0
-    for row in csv_reader:
+    for row in csv_reader: 
         c.execute(f'insert into students values(\'{row["name"]}\',{row["age"]},{row["id"]});')
 
 #==========================================================
 
 db.commit() #save changes
+c.execute("select * from students;")
+students = (c.fetchall())
+
+print("name | age | id")
+print()
+for group in students:
+    print(f'{group[0]} | {group[1]} | {group[2]}')
+
 db.close()  #close database
 
 
