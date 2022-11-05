@@ -1,7 +1,7 @@
-# TEAM AC: Abid Talukder, Craig Chen
+# TEAM FERRARI: Abid Talukder, Craig Chen, Raven Tang
 # SoftDev
-# K12 -- FlASK-FORMS
-# 2022-10-18
+# K19 -- SESSIONS
+# 2022-11-05
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
@@ -40,7 +40,11 @@ def disp_loginpage():
     print("***DIAG: request obj ***")
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return render_template( 'login.html' )
+    try:
+      if session['username'] == username and session['password'] == password:
+        return render_template("response.html", user=username,)
+    except:
+      return render_template( 'login.html' )
 
 
 @app.route('/auth', methods=['GET', 'POST'])
@@ -61,11 +65,14 @@ def authenticate():
     #     reqstr = "GET"
     # else:
     #     reqstr = "POST"
-    
+    try:
+      if session['username'] == username and session['password'] == password:
+        return render_template("response.html", user=username,)
+    except:
+      None
     
     # return f'Welcome to the Interweb, {request.form["username"]} <br><br> Your Request Method: ' + reqstr + f'<br><br> We Hope You Love This Website <br><br> '  #response to a form submission
     if request.method == 'POST':
-        print(request.cookies)
         
         if request.form.get('username') == username and request.form.get("password") == password:
             session['username'] = request.form['username']
@@ -74,16 +81,28 @@ def authenticate():
             return render_template("response.html", user=username,)
                       
         else:
+          
             if username != request.form.get('username'):
                 return '''
                 <html>
+
+# TEAM FERRARI: Abid Talukder, Craig Chen, Raven Tang
+<br>
+  # SoftDev
+  <br>
+  # K19 -- SESSIONS
+  <br>
+  # 2022-11-05
+  <br>
+
 
   <head>
     <title>Login </title>
   </head>
 
   <body>
-    <h1>
+    <h1> Welcome to the Interwebs, Traveller.
+      <br>
       Hello user. It seems you are not logged in. Please log in.
     </h1>
     
@@ -110,13 +129,22 @@ def authenticate():
             if password != request.form.get('password'):
                 return '''
                 <html>
+                # TEAM FERRARI: Abid Talukder, Craig Chen, Raven Tang
+<br>
+  # SoftDev
+  <br>
+  # K19 -- SESSIONS
+  <br>
+  # 2022-11-05
+  <br>
 
   <head>
     <title>Login </title>
   </head>
 
   <body>
-    <h1>
+    <h1> Welcome to the Interwebs, Traveller.
+      <br>
       Hello user. It seems you are not logged in. Please log in.
     </h1>
     
@@ -140,10 +168,16 @@ def authenticate():
 </html>
                 
                 '''
+      
                 
                   
 # request.args["username"]
-
+@app.route('/logout',methods=['GET', 'POST'])
+def logout():
+    # remove the username from the session if it's there
+    session.pop('username', None)
+    session.pop('password', None)
+    return render_template("login.html")
     
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
