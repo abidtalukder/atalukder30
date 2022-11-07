@@ -1,0 +1,14 @@
+FERRARI: Abid Talukder, Craig Chen, Raven (Ruiwen) Tang
+SoftDev
+K19 -- Sessions Greetings
+2022-11-06
+time spent: 1.6 hrs
+
+DISCO:
+* We can display different pages based on user login state by checking inputted username and password with session['username'] and session['password'].
+* A form can have multiple inputs, and we can set the default value/display using the value attribute. 
+* The order of our if statements means that we return an incorrect username message in the case that both username and password are incorrect.
+QCC:
+* How is the secret key similar to an fstring (for example: b'_5#y2L"F4Q8z\n\xec]/')?
+* What is the best way to move on from a single hardcoded account? Using CSV files? Using a database?
+* Flask.secret_key is a command that can be used to generate a secret key.
