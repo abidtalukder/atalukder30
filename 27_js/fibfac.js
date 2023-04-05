@@ -1,7 +1,7 @@
-// Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon 
+// Team It's Up to You :: Kevin Li, Abid Talukder
 // SoftDev pd0
 // K27 -- Basic functions in JavaScript
-// 2023-04-04t
+// 2023-04-03t
 // --------------------------------------------------
 
 
@@ -49,7 +49,7 @@ fact5.textContent = fact(5);
 
 
 // doing same thing for fib
-const fib1 = document.getElementById("fib1");
+var fib1 = document.getElementById("fib1");
 const fib2 = document.getElementById("fib2");
 const fib3 = document.getElementById("fib3");
 const fib4 = document.getElementById("fib4");

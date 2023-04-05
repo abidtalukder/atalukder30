@@ -1,19 +1,28 @@
-Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
+Team It's Up to You :: Kevin Li, Abid Talukder
 SoftDev pd0
 K27 -- Basic functions in JavaScript
 2023-04-03t
 
 DISCO
 -----------------------------------------------------------------
-* Ooooh, ___
-* Aaah-haa!  ____
-* ...
+* You can link HTML elements to constants and var
+* JavaScript is very similar to Java. Moreso than Scheme, at least at first glance
+* It was really cool to discover that JS classes are literally like JSON files. It makes sense that JSON was named JavaScript Object Notation
+* const variables cannot be changed while var variables can
+* JS doesn’t require you to put parentheses in front of everything
+* NO PRINT!!!!! Console.log is the new dynamic here.
+* You need node.js to javascript stuff in the terminal. Once you download that, you can run: node example.js
+* Node is an open source JS runtime environment for outside your web browser.
+* JS lets you access the Document interface, which lets you change the contents of an HTML document
+* A DOM tree is a tree structure that represents the contents of an HTML file.
 =================================================================
 
 QCC
 -----------------------------------------------------------------
-* Why...?
-* Huh?
-* Teh whah now?
-* ...
+* Are there other languages besides JS for web development?
+* Why can't I just perform JS functions in the HTML file and have them displayed in the HTML.
+This is really annoying because we have to link separate elements between the JS and HTML. I understand that this can be useful sometimes, but is annoying when you just want to print directly in the HTML file with the JS functions you made.
+* It was a little confusing at first that you need to put triple equal signs (===) to establish the equality operator, while double equal signs (==) means that the objects share the same memory address
+* JS felt a lot easier to use than scheme because it is similar to Java, but then again the syntax for JS is almost like any other object oriented or type safe (broader category) language. I can tell from experience that JS is similar to Dart as well and looks similar in some aspects to C++.
 =================================================================
+
