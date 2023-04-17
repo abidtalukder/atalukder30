@@ -1,0 +1,54 @@
+Team Its Up To You :: Abid Talukder, Kevin Li
+SoftDev pd0
+K28 -- Manipulating the DOM
+2023-04-17
+
+Dev Colsole:
+DISCO
+-----------------------------------------------------------------
+* The html displayed is the html after it has been modified by JS. No remnants of the non-modified html
+* AYO appears
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* 
+=================================================================
+
+
+
+
+DOM/HTML:
+DISCO
+-----------------------------------------------------------------
+* classes defined later in the html file have priority, so elements with class = "green blue" are blue in color because blue 
+was defined after green 
+* It's super cool that you can write the CSS in your HTML file. It really drives home the concept that CSS is just styling for the document.
+* We learned that the meta tag holds properties (metadata) for the file such as title, links, charset.
+* 
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* There should be a way to get a list of elements by parent becuse getting all list elements at once seems inconvenient
+* What would happen if you changed the charset. Would you still get letters if it wasn't UTF-8
+* What is meant to go inside the script tags if anything at all?
+* Is it possible to execute javascript in the HTML file and the results are outputted in HTML rather than connecting the dots with element identifiers?
+* What is the point of setting lang="en" in the first html tag. If we use English letters, the file automatically displays as English?
+* Is !Doctype HTML even relevant? HTML files have a HTML extension and the code is already parsed as HTML in the browser anyway.
+=================================================================
+
+
+
+
+JS File reading/editing:
+DISCO
+-----------------------------------------------------------------
+* There's just one line in index.html that applies the JS
+* Function calls go inside the JS file
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* 
+=================================================================
