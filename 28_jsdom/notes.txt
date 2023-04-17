@@ -53,9 +53,14 @@ DISCO
 -----------------------------------------------------------------
 * There's just one line in index.html that applies the JS
 * Function calls go inside the JS file
+* The arrow function seems to be mostly the same as a regular function but a different syntax
+* Arrow functions might be nameless? It seems like you can’t just use the arrow syntax without assigning the whole function to a variable, but the variable is not the name of the function
 =================================================================
 
 QCC
 -----------------------------------------------------------------
-* 
+* What is the difference between using variables and arrow functions and creating regular functions? Why do some people prefer one over the other?
+* Can functions be treated as objects? Can you pass in functions as inputs to other functions?
+* Do anonymous functions exist in Javascript?
+* Is the dev console basically the terminal for websites? You console.log in JS and see the output in the dev console.
 =================================================================
