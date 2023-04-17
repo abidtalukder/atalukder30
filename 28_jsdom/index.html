@@ -18,6 +18,7 @@
       .green {color : #00ff00;}
       .blue  {color : #0000ff;}
     </style>
+    <!-- order defined matters because the ones defined lower have priority when named as classes -->
   </head>
 
   <body>
@@ -27,18 +28,21 @@
     <div id="div2">This is a second div</div>
     <div class="blue">This is a toid div</div>
 
+    <li> the hidden text </li>
+
     <ol id="thelist">
       <li class="">item 0</li>
-      <li class="green blue">item 1</li>
+      <li class="green blue">item 1</li> <!-- "green blue" and "blue green" both create blue text -->
       <li class="green blue">item 2</li>
-      <li class="red green blue">item 3</li>
+      <li class="red green blue">item 3</li> <!-- "red green" creates green, "red green blue" creates blue, "green red" creates green -->
       <li class="red green blue">item 4</li>
       <li class="green blue">item 5</li>
       <li class="green blue">item 6</li>
       <li class="">item 7</li>
     </ol>
 
-    <script src="dommy_consolery.js"></script>
+    <script src="dommy_consolery.js"></script> <!-- nothing goes inside here? Maybe we're supposed to put function calls here? -->
+    <!-- ok so this just applies the javascript to the page, which means function calls should go inside the js file -->
 
   </body>
 </html>
