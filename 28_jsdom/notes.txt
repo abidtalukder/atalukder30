@@ -8,14 +8,21 @@ DISCO
 -----------------------------------------------------------------
 * The html displayed is the html after it has been modified by JS. No remnants of the non-modified html
 * AYO appears
+* You can hover over the code and the region of that code in the website will be highlighted
+* The sources tab shows all the different files that are being viewed, but lacks all the network connections to the website.
+* The network tab shows all the different connections to the websites such as the API endpoints that the site may be calling.
 =================================================================
 
 QCC
 -----------------------------------------------------------------
-* 
+* How can one hide their HTML or Javascript code? What if you want to keep your algorithms private? The dev console shows everything.
+* I think the console tab can be used to call functions from your Javascript files?
+* Is there a button to execute JS code within the Chrome browser outside the HTML file. The sources tab has stuff like call stack, which seems like debugging tools but I cannot seem to find the run button.
+* What does the performance tab show and how does it measure performance? How long does it take to finish "profiling"?
+* The security tab seems to be lacking. It just says that our local site is not HTTPS. I would think it would give a more detailed report possibly showing the sites reputation.
+* The application tab shows many properties and endpoints of the site. What is websql? Can users access the database from the application tab.
+* It is really cool that you can see what cookies the websites are using. This is very important for security because it can give you a clue as to the number of trackers a website is downloading to your browser.
 =================================================================
-
-
 
 
 DOM/HTML:
