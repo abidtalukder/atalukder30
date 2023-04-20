@@ -1,0 +1,66 @@
+Team Its Up To You :: Abid Talukder, Kevin Li
+SoftDev pd0
+K28 -- Manipulating the DOM
+2023-04-17
+
+Dev Colsole:
+DISCO
+-----------------------------------------------------------------
+* The html displayed is the html after it has been modified by JS. No remnants of the non-modified html
+* AYO appears
+* You can hover over the code and the region of that code in the website will be highlighted
+* The sources tab shows all the different files that are being viewed, but lacks all the network connections to the website.
+* The network tab shows all the different connections to the websites such as the API endpoints that the site may be calling.
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* How can one hide their HTML or Javascript code? What if you want to keep your algorithms private? The dev console shows everything.
+* I think the console tab can be used to call functions from your Javascript files?
+* Is there a button to execute JS code within the Chrome browser outside the HTML file. The sources tab has stuff like call stack, which seems like debugging tools but I cannot seem to find the run button.
+* What does the performance tab show and how does it measure performance? How long does it take to finish "profiling"?
+* The security tab seems to be lacking. It just says that our local site is not HTTPS. I would think it would give a more detailed report possibly showing the sites reputation.
+* The application tab shows many properties and endpoints of the site. What is websql? Can users access the database from the application tab.
+* It is really cool that you can see what cookies the websites are using. This is very important for security because it can give you a clue as to the number of trackers a website is downloading to your browser.
+=================================================================
+
+
+DOM/HTML:
+DISCO
+-----------------------------------------------------------------
+* classes defined later in the html file have priority, so elements with class = "green blue" are blue in color because blue 
+was defined after green 
+* It's super cool that you can write the CSS in your HTML file. It really drives home the concept that CSS is just styling for the document.
+* We learned that the meta tag holds properties (metadata) for the file such as title, links, charset.
+* 
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* There should be a way to get a list of elements by parent becuse getting all list elements at once seems inconvenient
+* What would happen if you changed the charset. Would you still get letters if it wasn't UTF-8
+* What is meant to go inside the script tags if anything at all?
+* Is it possible to execute javascript in the HTML file and the results are outputted in HTML rather than connecting the dots with element identifiers?
+* What is the point of setting lang="en" in the first html tag. If we use English letters, the file automatically displays as English?
+* Is !Doctype HTML even relevant? HTML files have a HTML extension and the code is already parsed as HTML in the browser anyway.
+=================================================================
+
+
+
+
+JS File reading/editing:
+DISCO
+-----------------------------------------------------------------
+* There's just one line in index.html that applies the JS
+* Function calls go inside the JS file
+* The arrow function seems to be mostly the same as a regular function but a different syntax
+* Arrow functions might be nameless? It seems like you can’t just use the arrow syntax without assigning the whole function to a variable, but the variable is not the name of the function
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* What is the difference between using variables and arrow functions and creating regular functions? Why do some people prefer one over the other?
+* Can functions be treated as objects? Can you pass in functions as inputs to other functions?
+* Do anonymous functions exist in Javascript?
+* Is the dev console basically the terminal for websites? You console.log in JS and see the output in the dev console.
+=================================================================
