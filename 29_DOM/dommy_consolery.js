@@ -171,8 +171,8 @@ const myFxn = (param1, param2) => {
 };
 
 // FIB BUTTONs
-var fb = document.getElementById("fibbutton")
-fibbutton.addEventListener('click', fibaction)
+var fibb = document.getElementById("fibbutton")
+fibb.addEventListener('click', fibaction)
 //addFib("works up to here")
 
 function fibaction() {
@@ -183,11 +183,11 @@ function fibaction() {
   //addFib(fib(10))
 }
 
-var fb = document.getElementById("factbutton")
-fibbutton.addEventListener('click', fibaction)
+var factb = document.getElementById("factbutton")
+factb.addEventListener('click', factaction)
 //addFib("works up to here")
 
-function fibaction() {
+function factaction() {
   var ans = document.createElement("li")
   //ans.innerHTML = fib(Number(document.getElementById('fibinput').getAttribute()))
   ans.innerHTML= document.getElementById('factinput').value + ": " + fact(Number(document.getElementById('factinput').value))
@@ -195,14 +195,16 @@ function fibaction() {
   //addFib(fib(10))
 }
 
-var fb = document.getElementById("gcdbutton")
-fibbutton.addEventListener('click', fibaction)
+var gcdb = document.getElementById("gcdbutton")
+gcdb.addEventListener('click', gcdaction)
 //addFib("works up to here")
 
-function fibaction() {
+function gcdaction() {
   var ans = document.createElement("li")
   //ans.innerHTML = fib(Number(document.getElementById('fibinput').getAttribute()))
-  ans.innerHTML= document.getElementById('gcdinput').value + ": " + gcd(Number(document.getElementById('gcdinput').value))
+  var x = Number(document.getElementById('gcdinputa').value)
+  var y = Number(document.getElementById('gcdinputb').value)
+  ans.innerHTML= x+", " + y + ": " + gcd(x,y)
   document.getElementById("gcdlist").appendChild(ans)
   //addFib(fib(10))
 }
