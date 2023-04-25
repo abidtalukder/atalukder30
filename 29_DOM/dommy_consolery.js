@@ -66,6 +66,20 @@ var addFib = function(text) {
   list.appendChild(newitem);
 };
 
+var addfact = function(text) {
+  var list = document.getElementById("factlist");
+  var newitem = document.createElement("li");
+  newitem.innerHTML = text;
+  list.appendChild(newitem);
+};
+
+var gcdFib = function(text) {
+  var list = document.getElementById("gcdlist");
+  var newitem = document.createElement("li");
+  newitem.innerHTML = text;
+  list.appendChild(newitem);
+};
+
 addItem("my item") //adds "my item" to the list
 addItem(o) //adds [object Object] probably because o is not a string. [object Object] is probably the def string representation of an object
 addItem(o["name"]) //adds Thluffy
@@ -145,7 +159,7 @@ addItem("skdljflksdjf") //24
 addItem(1293329472398472) //13
 addItem(gcd(51, 27)) //3
 addItem("hello")
-addFib("hello")
+//addFib("hello")
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
 //  Note anything notable.
@@ -163,9 +177,34 @@ fibbutton.addEventListener('click', fibaction)
 
 function fibaction() {
   var ans = document.createElement("li")
-  ans.innerHTML = fib(Number(document.getElementById('fibinput').getAttribute()))
+  //ans.innerHTML = fib(Number(document.getElementById('fibinput').getAttribute()))
+  ans.innerHTML= document.getElementById('fibinput').value + ": " + fib(Number(document.getElementById('fibinput').value))
   document.getElementById("fiblist").appendChild(ans)
-  addFib(fib(10))
+  //addFib(fib(10))
+}
+
+var fb = document.getElementById("factbutton")
+fibbutton.addEventListener('click', fibaction)
+//addFib("works up to here")
+
+function fibaction() {
+  var ans = document.createElement("li")
+  //ans.innerHTML = fib(Number(document.getElementById('fibinput').getAttribute()))
+  ans.innerHTML= document.getElementById('factinput').value + ": " + fact(Number(document.getElementById('factinput').value))
+  document.getElementById("factlist").appendChild(ans)
+  //addFib(fib(10))
+}
+
+var fb = document.getElementById("gcdbutton")
+fibbutton.addEventListener('click', fibaction)
+//addFib("works up to here")
+
+function fibaction() {
+  var ans = document.createElement("li")
+  //ans.innerHTML = fib(Number(document.getElementById('fibinput').getAttribute()))
+  ans.innerHTML= document.getElementById('gcdinput').value + ": " + gcd(Number(document.getElementById('gcdinput').value))
+  document.getElementById("gcdlist").appendChild(ans)
+  //addFib(fib(10))
 }
 
 

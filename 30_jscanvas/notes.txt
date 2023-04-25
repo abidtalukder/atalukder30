@@ -1,0 +1,15 @@
+Team Its Up To You :: Abid Talukder, Kevin Li
+SoftDev pd0
+K30 -- Canvas
+2023-04-24
+
+DISCO:
+* clientX gives coordinates relative to the viewport you're interacting with. This is the same as pageX if the viewport is the page
+* pageX is relative to the page (so excluding bookmarks bar, taskbar, etc). 
+* screenX is relative to your entire screen
+* offsetX is relative to the node you're interacting with
+* the canvas does not count as a separate viewport
+* ctx draws and renders a path separately. It can draw a path, but not render it
+* fillStyle() does not have to be redeclared everytime you start a new path
+* arc() takes angles in radians
+* fill() can be used on unclosed shapes. It will try to close the shape with a straight line
