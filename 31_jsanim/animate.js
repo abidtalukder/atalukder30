@@ -4,7 +4,7 @@ var stopButton = document.getElementById("buttonStop") //get stop button
 
 var ctx = c.getContext("2d") // Your code
 
-ctx.fillStyle = "red"
+ctx.fillStyle = "blue"
 
 var width = c.width
 var height = c.height
@@ -17,10 +17,8 @@ var clear = (e) => {
 
 var radius = 0;
 var growing = true;
-var radius = 10;
+var radius = 0;
 var stopAnimation = false;
-var isDrawing = false;
-
 
 var drawCircle = function(e) {
     if (growing) {
