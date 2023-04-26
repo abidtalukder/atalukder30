@@ -1,0 +1,23 @@
+Team batman :: Abid Talukder, May Qiu
+SoftDev pd0
+K31 -- JS Paint, Paint, Paint...
+2023-04-17
+
+DISCO
+-----------------------------------------------------------------
+* Clicking multiple times on a button made the function run in several instances at the same time so the animation went faster.
+  We had to turn off the draw button once it started.
+* You can remove event listeners with the removeEventListener method
+* You can add multiple event listeners to one button to have multiple functions running at the same time
+* Arrow functions might be nameless? It seems like you can’t just use the arrow syntax without assigning the whole function to a variable, but the variable is not the name of the function
+* Its cool that functions are also variables because they can be passed and used as inputs
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* Is there a method to tell how many event listeners an element has
+* What is the difference between var and let in declaring variables
+* What is the point of stating <html lang="en"> when you are already typing in english?
+* What is the point of declaring the requestID variable?
+* What is the automatic assignment of a variable when it is declared? If I type declare var a; is var a saved as null?
+=================================================================
