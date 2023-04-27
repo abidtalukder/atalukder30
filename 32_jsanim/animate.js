@@ -26,7 +26,7 @@ var dvdLogoSetup = function () {
     var rectWidth = 150
     var rectHeight = 100
     
-    var rectX = random(0,cwidth - rectWidth)
+    var rectX = random(0,cwidth - rectWidth) 
     var rectY = random(0,cheight - rectHeight)
     
     var xVel = 1
@@ -39,31 +39,42 @@ var dvdLogoSetup = function () {
       ctx.clearRect(0,0,c.width,c.height)
       ctx.drawImage(logo,rectX,rectY,rectWidth,rectHeight)
       // Movement and Changing positions
-      if (rectX+rectWidth+1>=cwidth){
+      if (rectX+rectWidth>=cwidth){
         //rectX=cwidth-1
-        xVel = -2
+        xVel = -xVel
+        console.log("hit edge at x = ", rectX + rectWidth)
       }
       
       if (rectX <= 0) {
-        xVel =2
+        xVel = -xVel
+        console.log("hit edge at x = ", rectX)
       }
       
-      if (rectY+rectHeight-20>=cheight){
+      if (rectY+rectHeight>=cheight){
         //rectY = cheight-1
-        yVel = -2
+        yVel = -yVel
+        console.log("hit edge at y = ", rectY + rectHeight)
       }
       
       if (rectY <= 0) {
-        yVel = 2
+        yVel = -yVel
+        console.log("hit edge at y = ", rectY)
       }
       
       rectX += xVel
       rectY += yVel
-      
+
+      // drawRect(rectX, rectY, rectWidth, rectHeight)
       requestID = requestAnimationFrame(dvdLogo);
     };
     dvdLogo();
 };
+
+var drawRect = (x, y, w, h) => {
+    ctx.beginPath()
+    ctx.rect(x,y,w,h)
+    ctx.stroke()
+}
 
 var radius = 0;
 var growing = true;
