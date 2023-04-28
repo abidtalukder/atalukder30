@@ -1,0 +1,77 @@
+Team batman: Abid Talukder, May Qiu
+SoftDev pd0
+Spring 2023
+HW 33: HTML file for exploring DOM event propogation using JavaScript
+
+Predictions and Observations
+Folder 1
+
+Prediction: There is going to be some sort of alert that is going to come when we click on each element in the table. We do not know what the alert will look like.
+
+Observation: When we click on the table element, there is a pop up that comes with the table elements name.
+
+Folder 2
+
+Prediction: When we click on the element, there will be 3 pop ups. One with the code in the table, the row, and the element. We do not know what the order will be though, but we think it will be more general (table) to more specific (td)
+
+Observaton: Exactly what we predicted.
+
+Folder 3
+
+Prediction: It should have the same result in folder 2 except we thought that the order of the pop ups would be inverse.
+
+Observation: The order was table, cell, then row.
+
+Folder 4
+
+Prediction: We thought general to specific as in table would be the first one you see.
+
+Observation: We were right.
+
+Notes:
+Dev Console:
+DISCO
+-----------------------------------------------------------------
+* You can call JS commands in the dev console to test them one by one. All the functions are also pulled from the JS file in the DOM structure.
+* You can also choose different display layouts for the code. There are options like iPhone and Android.
+* There is also a virtual finger so you can see how well the website responds to touch methods like on a smartphone.
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* The dev console is sooo cool for allowing developers to hover over HTML code so we can see what part of the code it affects.
+* When you click on the JS section of the dev console, you can see the call stack which is cool because you can see the recursive function calls!!!
+=================================================================
+
+
+DOM/HTML:
+DISCO
+-----------------------------------------------------------------
+* We can make a table using <table>, <tr>, and <td>. It acts like a 2d array in that when we call for tr, the tds are in a iterable list.
+* The dev console is perfect for showing the DOM structure. It uses three dots to hide information in the tags so we can view the document for an upper level DOM structure.
+* VSCode has shortcuts by which you can click tab to finish setting up a DOM structure.
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* What does <meta charset="utf-8"/> do?
+* What's the point of putting the charset? I have used HTML before and it worked perfectly without it?
+=================================================================
+
+JS File reading/editing:
+DISCO
+-----------------------------------------------------------------
+* There is a new method that you can target all elements that have the same tag, which is super cool.
+* If you put all the similar elements into one variable, then it will be "HTMLCollectionOf<HTMLTableCellElement>". What does this mean? Is this a list? What is a collection?
+* What is the difference between using let and var?
+* We have tried using final to declare a variable, but it doesn't work. It seems to result in syntax error?
+* Bubbling: Runs on the target element, then the parent, then the ancestors
+* Capturing: The inverse. It will start at the ancestors then proceed down.
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* Does the StopPropogation show the last alert or the first alert?
+* What the heck does preventDefault() do in Javascript? On the last homework, everything worked without it?
+* It's so cool that you can hover over functions to see what they do in VSCode!!!!
+=================================================================% 
